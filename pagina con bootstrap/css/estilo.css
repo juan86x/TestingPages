@@ -10,108 +10,11 @@ body{
   width:300px;
   height:150px;
 }
-/*--navbar--*/
-/*.menu{
-   float: left;
-   padding-top: 10px;
-   width: 60%;
-}
-.menu ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.menu li {
-  color: mediumblue;
-    float: left;
-}*/
-.menu li a {
-  font-family: 'Dokdo', cursive;
-    font-size: 25px;
-    display: block;
-    color: lightslategrey;
-    text-align: center;
-    padding: 12px 14px;
-    text-decoration: none;
-}
-.menu li a:hover {
+
+#menu li a:hover {
     color: #F7E42C;
 }
-/*--titulo del form--*/
-.pcontacto{
-  padding: 10px 10px;
-  text-align: left;
-}
-.pcontacto h3{
-  font-size: medium;
-}
-/*--form hecho de ejemplo de MDN--*/
-form {
-  /* Solo para centrar el en la página */
-  margin: 0 auto;
-  width: 400px;
-padding: 1em;
-}
 
-div + div {
-  margin-top: 1em;
-}
-
-label {
-  /* Para asegurarse de que todas las etiquetas tengan el mismo tamaño y se alineen correctamente */
-  display: inline-block;
-  width: 90px;
-  text-align: right;
-}
-
-input, textarea {
-  /* Para asegurarse de que todo el campo de texto tenga la misma configuración de fuente
-      por defecto, textarea se configura con una fuente monoespaciada */
-  font: 1em sans-serif;
-
-  /* Para dar el mismo tamaño a todo el campo de texto */
-  width: 300px;
-/*-- Para armonizar la apariencia del borde del campo de texto --*/
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  border: 1px solid #000;
-}
-/*-- Para resaltar un poco los elementos activos-- */
-input:focus, textarea:focus {
-  border: solid 2px red;
-}
-
-textarea {
-  /* Para alinear correctamente el campo de texto de líneas múltiples con su etiqueta */
-  vertical-align: top;
-
-  /* Para dar suficiente espacio para escribir texto */
-  height: 5em;
-
-  /* Para permitir a los usuarios cambiar el tamaño de cualquier área de texto verticalmente
-      Funciona solo en Chrome, Firefox y Safari */
-  resize: vertical;
-}
-
-.button {
-  /* Para colocar los botones en la misma posición de los campos de texto */
-  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
-}
-
-button {
-  /* Este margen adicional representa el mismo espacio que el espacio entre las etiquetas y sus campos de texto */
-  margin-left: .5em;
-}
-
-.footer{
-  border-radius: 100px;
-  border-style: groove;
-  border-color: aqua;
-  float: left;
-  width: 100%;
-  height: 50px;
-}
 /*--texto del nosotros--*/
 .pnos{
   font-family: 'Acme', sans-serif;
