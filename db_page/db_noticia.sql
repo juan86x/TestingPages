@@ -68,6 +68,18 @@ INSERT INTO `noticia` (`id_noticia`, `titulo`, `descripcion`, `Categoria_id_cate
 (4, '\"que trae de nuevo el nuevo firefox quantum?\"', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt... ', 24),
 (5, '\"cuales son las nuevas apps que sacaron para android?\"', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt... +info', 26);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `id` int(11) NOT NULL,
+  `email` varchar(80) NOT NULL,
+  `pasword` varchar(256) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 --
 -- Índices para tablas volcadas
 --
@@ -84,6 +96,22 @@ ALTER TABLE `categoria`
 ALTER TABLE `noticia`
   ADD PRIMARY KEY (`id_noticia`),
   ADD KEY `Noticia_Categoria` (`Categoria_id_categoria`);
+
+--
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
