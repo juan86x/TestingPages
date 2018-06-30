@@ -9,6 +9,12 @@ $acciones = [
   "guardar" => "NoticiaController#guardarNoticia",
   "borrar" => "NoticiaController#borrarNoticia",
   "finalizar" => "NoticiaController#finalizaNoticia",
-  "detalle" => "NoticiaController#mostrarDetalle"
+  "detalle" => "NoticiaController#mostrarDetalle",
+  "ver" => "CategoriaController#mostrarCategorias",
+  "crear" => "CategoriaController#crearCategoria",
+  "guardar" => "CategoriaController#guardarCategoria",
+  "borrar" => "CategoriaController#borrarCategoria",
+  "finalizar" => "CategoriaController#finalizaCategoria",
+  "detalle" => "CategoriaController#mostrarDetalle"
 ];
 ?>

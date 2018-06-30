@@ -1,3 +1,4 @@
+</body>
 <!-- Footer -->
 <footer class="page-footer font-small cyan darken-3 mt-4">
 
