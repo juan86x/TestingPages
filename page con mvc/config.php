@@ -1,6 +1,10 @@
 <?php
 
 $acciones = [
+    "ver" => "Controller#mostrarHome",
+    "ver" => "Controller#mostrarNosotros",
+    "ver" => "Controller#mostrarNoticia",
+    "ver" => "Controller#mostrarContacto",
        "" => "LoginController#login",
   "login" => "LoginController#validarLogin",
  "logout" => "LoginController#logout",

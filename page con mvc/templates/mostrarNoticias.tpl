@@ -1,4 +1,4 @@
-{include file="headerHome.tpl"}
+{include file="headerLogin.tpl"}
 <h1>Lista de Noticias</h1>
 <ul>
 
@@ -9,7 +9,7 @@
       <li>
     {/if}
 
-      <a href="detalle/{$tarea['id']}">{$tarea['titulo']}</a>: {$tarea['descripcion']} <a href="borrar/{$tarea['id']}">Borrar</a> <a href="finalizar/{$tarea['id']}">Finalizar</a>
+      <a href="detalle/{$noticia['id_noticia']}">{$noticia['titulo']}</a>: {$noticia['descripcion']} <a href="borrar/{$noticia['id_noticia']}">Borrar</a> <a href="finalizar/{$noticia['id_noticia']}">Finalizar</a>
     </li>
   {/foreach}
 

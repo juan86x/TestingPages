@@ -1,7 +1,7 @@
 <?php
 require_once('libs/Smarty.class.php');
 
-class NoticiaView
+class NosotrosView
 {
 private $smarty;
 
@@ -10,8 +10,8 @@ function __construct()
   $this->smarty = new Smarty;
 }
 
-  function mostrarNoticia(){
-      $this->smarty->display('noticia.tpl');
+  function mostrarNosotros(){
+      $this->smarty->display('nosotros.tpl');
   }
   
 }

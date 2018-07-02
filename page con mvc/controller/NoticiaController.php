@@ -1,28 +1,28 @@
 <?php
 require_once "./controller/SecureController.php";
 require_once "./model/NoticiaModel.php";
-require_once "./view/NoticiaView.php";
+require_once "./view/NoticiasView.php";
 
 class NoticiaController extends SecureController{
 
   private $NoticiaModel;
-  private $NoticiaView;
+  private $NoticiasView;
 
   function __construct(){
 
     $this->NoticiaModel = new NoticiaModel();
-    $this->NoticiaView = new NoticiaView();
+    $this->NoticiasView = new NoticiasView();
   }
 
   function mostrarNoticias($params = [])
   {
     $tareas = $this->NoticiaModel->obtenerNoticias();
-    $this->NoticiaView->mostrarNoticias($noticia);
+    $this->NoticiasView->mostrarNoticias($noticia);
   }
 
   function crearNoticia($params = [])
   {
-    $this->NoticiaView->mostrarVistaCrearNoticia();
+    $this->NoticiasView->mostrarVistaCrearNoticia();
   }
 
   function guardarNoticia($params = [])
@@ -59,7 +59,7 @@ class NoticiaController extends SecureController{
     else
       $estado = "NO Esta Finalizada";
 
-    $this->NoticiaView->mostrarDetalle($noticia, $estado);
+    $this->NoticiasView->mostrarDetalle($noticia, $estado);
   }
 
 

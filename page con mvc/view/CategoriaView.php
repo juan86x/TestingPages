@@ -1,6 +1,6 @@
 <?php
 require_once "./libs/Smarty.class.php";
-class NoticiaView {
+class CategoriaView {
 
   private $smarty;
 
@@ -21,9 +21,9 @@ class NoticiaView {
   function mostrarDetalle($categoria, $estado){
     $this->smarty->assign('id_categoria', $categoria['id_categoria'] );
     $this->smarty->assign('nombre', $categoria['nombre'] );
-    $this->smarty->assign('descripcion',$noticia['descripcion'] );
+    $this->smarty->assign('descripcion',$categoria['descripcion'] );
     $this->smarty->assign('estado',$estado );
-    $this->smarty->display("mostrarDetalleC.tpl");
+    $this->smarty->display("mostrarDetalleCategoria.tpl");
   }
 }
  ?>

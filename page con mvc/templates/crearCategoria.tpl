@@ -6,6 +6,6 @@
   <input type="text" name="nombre" value="">
   <label for="descripcion">Descripcion</label>
   <input type="text" name="descripcion" value="">
-  <button type="submit" name="button">Crear</button>
+  <button type="submit" name="button">Crear Categoria</button>
 </form>
 {include file="footer.tpl"}
